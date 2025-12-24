@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        :root {
+            --bg: #0e0e11;
+            --panel: #14141a;
+            --text: #e6e6eb;
+            --muted: #a0a0b0;
+            --neon: #4cc9ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            padding: clamp(1.5rem, 4vw, 3rem);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--muted);
+            max-width: 600px;
+        }
+
+        /* PROJECT GRID */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--panel);
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: border 0.2s ease, transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            border-color: var(--neon);
+            transform: translateY(-4px);
+        }
+
+        .project-card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: var(--neon);
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 4rem;
+            border-top: 1px solid #222;
+            padding-top: 1rem;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>Projects</h1>
+            <p>
+                A selection of games and interactive projects.
+                Each project page contains details, media, and related links.
+            </p>
+        </header>
+
+        <!-- PROJECTS GRID -->
+        <section class="projects-grid">
+
+            <!-- PROJECT CARD -->
+            <a href="/webgl/projects/downhill.html" class="project-card">
+                <h2>Downhill</h2>
+                <p>
+                    A 2D Casual game which player can play to pass some time can be a bit addictive if played for long.
+                </p>
+                <div class="project-meta">
+                    Unity · Android · Casual
+                </div>
+                <span class="project-link">View Project →</span>
+            </a>
+
+            <a href="/webgl/projects/beatTheClock.html" class="project-card">
+                <h2>BeatTheClock</h2>
+                <p>
+                    A simple game but can be a pain in the ass which made under 60 min for a game jam.
+                </p>
+                <div class="project-meta">
+                    Unity · WebGL · Game Jam
+                </div>
+                <span class="project-link">View Project →</span>
+            </a>
+
+            <a href="/webgl/projects/inSight.html" class="project-card">
+                <h2>InSight</h2>
+                <p>
+                    A 2D game where player has to shoot all the enmies in one bullet.
+                </p>
+                <div class="project-meta">
+                    Unity · WebGL · Game Jam
+                </div>
+                <span class="project-link">View Project →</span>
+            </a>
+
+            <a href="/webgl/projects/fleetForce.html" class="project-card">
+                <h2>Fleet Force</h2>
+                <p>
+                    Very simple top-down game where player has to defend by destroying enemy ships.
+                </p>
+                <div class="project-meta">
+                    Unity · WebGL · Casual
+                </div>
+                <span class="project-link">View Project →</span>
+            </a>
+
+            <a href="/webgl/projects/theStartIsTheEnd.html" class="project-card">
+                <h2>TheStartIsTheEnd</h2>
+                <p>
+                    A Complex laser stratergy game where player could go crazy even on one mistake.
+                </p>
+                <div class="project-meta">
+                    Unity · WebGL · Game Jam
+                </div>
+                <span class="project-link">View Project →</span>
+            </a>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <a href="/webgl/index.html">← Home</a>
+        </footer>
+
+    </div>
+</body>
+
+</html>
